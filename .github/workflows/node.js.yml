@@ -30,7 +30,4 @@ jobs:
       run: npm install
     - name: Set up MySQL
       run: |
-        sudo apt-get install mysql-server
-        sudo mysql -e "CREATE DATABASE IF NOT EXISTS node_mysql_crud_db;"
         sudo systemctl start mysql
-        sudo systemctl enable mysql
