@@ -14,8 +14,8 @@ module.exports = dbConn;*/
 
 module.exports = {
     HOST: "localhost",
-    USER: "root",
-    PASSWORD: "",
+    USER: "anil",
+    PASSWORD: "123",
     DB: "node_mysql_crud_db",
     dialect: "mysql",
     pool: {
