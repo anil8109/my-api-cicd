@@ -1,0 +1,21 @@
+
+
+
+
+
+Git Actions Runner
+
+mkdir actions-runner && cd actions-runner
+curl -o actions-runner-linux-x64-2.315.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.315.0/actions-runner-linux-x64-2.315.0.tar.gz
+echo "6362646b67613c6981db76f4d25e68e463a9af2cc8d16e31bfeabe39153606a0  actions-runner-linux-x64-2.315.0.tar.gz" | shasum -a 256 -c
+tar xzf ./actions-runner-linux-x64-2.315.0.tar.gz
+./config.sh --url https://github.com/anil8109/my-api-cicd --token AKM6X5WCJ7GL4YF7BQJ3KJ3GDA35I
+./run.sh
+
+
+
+sudo apt-get install mysql-server
+        sudo mysql -e "CREATE DATABASE IF NOT EXISTS node_mysql_crud_db;"
+        sudo mysql -e "CREATE USER 'my_user'@'localhost' IDENTIFIED BY 'my_password';"
+        sudo mysql -e "GRANT ALL PRIVILEGES ON my_database.* TO 'my_user'@'localhost';"
+        sudo mysql -e "FLUSH PRIVILEGES;"
